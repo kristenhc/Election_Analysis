@@ -9,9 +9,11 @@ file_to_save= os.path.join("Election_Analysis", "Resources","analysis","election
 
 # Initialize a total vounts counter.
 total_votes = 0
+
 # Candidate options and candidate votes
 candidate_options = []
 candidate_votes = {}
+
 # Track winning candidate, vote count, and percentage.
 winning_candidate = ""
 winning_count = 0
@@ -81,4 +83,16 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(winning_candidate_summary)
 
     #print(winning_candidate_summary)
+
+
+# Challenge Objectives
+# calculate the voter turnout for each county = # votes per county
+    # {county: vote }
+
+# calculate percentage of votes from each county from total count %
+    # pull county votes / total_votes * 100
+
+# determine county with highest turnout 
+
+#print to console and write to txt file
 
