@@ -1,9 +1,9 @@
 # Election_Analysis
 
 ## Project Overview
-The Colorado board of elections has tasked us to complete the election audit of a recent local congressional election. Using python and imported csv module, we are able to read the csv file (containing fields: ballot ID, county, and candidate), perform basic anaylses, and write the results to a .txt file.
+The Colorado board of elections has tasked us to complete the election audit of a recent local congressional election. Using python and imported csv module, we read the csv file (containing fields: ballot ID, county, and candidate), perform basic anaylses, and write the results to a .txt file.
 
-Election Audit Objectives:
+*Election Audit Objectives, Get:*
 1. Total number of votes cast.
 2. Complete list of candidates who received votes.
 3. Breakdown of each *candidate's number of votes and the percentage of total votes cast.
@@ -17,22 +17,21 @@ Election Audit Objectives:
 
 ## Election Audit Results
 * Total Votes Cast: 369,711
-* Candidate Breakdown
+* Candidate Breakdown (Name, % of Total Votes, # Votes)
+
   ![Candidate_Breakdown](Resources/candidate_breakdown.png)
+  
 * Winner Breakdown: 
+
   ![Winning_Candidate](Resources/winning_candidate.png)
-* County Summary
+  
+* County Summary (Name, % of Total Votes, # Votes)
+
   ![County_Breakdown](Resources/county_breakdown.png)
+  
 * County with Largest Number Votes: Denver
  
-## Summary
-The findings were that there were total 369,711 votes cast in this election.
-The candidates and the percentage and number of votes received were:
-- Charles Casper Stockham, who received 23% of the vote and 85,213 number of votes.
-- Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
-- Raymon Anthony Doane 3.1% of the votes and 11,606 number of votes.
-Diana was the winner of the election. 
+## Election Audit Summary
+We've succesfully evaluated this local congressional election's data, producing a summary of county and candidates voting results, including: total votes cast, vote count and percentage votes for each county and candidate, winner of the election, county with largest votes. 
 
-## Challenge Overview
-
-## Challenge Summary
+This script may be used on past and future election results, as well as other locality or state election data, as long as the data is structured similarly. The script can be modified to accomodate for new columns of data or additional analyses that we are interested in by declaring new variables, creating new loops and decision statements, and new print and write to file statements. For example, if interested in looking at the most popular candidate in each county, create additional varaibles and decision statements to find the candidate that received the highest number of votes in each county. Another way the script can be modified is by writing the results to separate .txt files based on subject (candidate summary, county summary, etc.)
